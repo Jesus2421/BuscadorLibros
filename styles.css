@@ -1,15 +1,24 @@
 /* estilos.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-size: 16px;
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
+    min-height: 100vh; 
 }
 
+#title {
+    text-align: center;
+    color: #333;
+}
 .container {
     max-width: 800px;
     margin: 0 auto;
+    flex: 1;
 }
 img{
     width: 150px;
@@ -22,21 +31,44 @@ h1 {
     color: #333;
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+}
+
 #searchInput {
     width: 80%;
     padding: 10px;
     margin: 20px 0;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #ccc;
+    border-right: none;
+    box-sizing: border-box;
 }
 
 #searchButton {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none;
+    border: 1px solid #ccc;
+    border-right: none;
+    height: 100%;
+}
+#searchButton:hover {
+    background-color: #d0d0d0; /* Cambiar color de fondo al hacer hover */
+    transform: scale(1); /* Añadir animación de escala al hacer hover */
 }
 
 #bookResults {
     margin-top: 20px;
+    font-size: 18px;
 }
 
 .book {
